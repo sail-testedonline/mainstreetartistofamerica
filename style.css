@@ -1,0 +1,68 @@
+:root {
+  --primary: white; /* Define the primary color */
+}
+
+#tilecard {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  text-justify: auto;
+}
+
+.hero {
+  background: url('photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjusted height */
+  background-color: #ccc; /* Fallback color */
+}
+
+#cta{
+  text-align: center;
+}
+
+#ctah2 {
+  font-size: 3rem;
+  text-align: center;
+  text-justify: auto;
+  color: black;
+}
+
+.ctaButton{
+  border-radius: 4px;
+  background-color: #007BFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.ctaButton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.ctaButton span:after {
+  content: ' \00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ctaButton:hover span {
+  padding-right: 25px;
+}
+
+.ctaButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
